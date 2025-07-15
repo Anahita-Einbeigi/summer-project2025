@@ -8,6 +8,9 @@ import img1 from '../assets/about.png';
 import img2 from '../assets/shop.png';
 import img3 from '../assets/services.png';
 import sign from '../assets/sign.png';
+import tips1 from '../assets/tips1.png';
+import tips2 from '../assets/tips2.png';
+import tips3 from '../assets/tips3.png';
 
 const Home: React.FC = () => {
   return (
@@ -117,7 +120,7 @@ const Home: React.FC = () => {
           <div className="row g-4 justify-content-center">
             {/* Card 1 */}
             <div className="col-12 col-sm-6 col-md-4">
-              <div className="card border-0 bg-transparent">
+              <div className="cards border-0 bg-transparent">
                 <img src={img1} alt="About" className="img-fluid uniform-image" />
                 <div className="bg-dark text-white py-2">
                     <Link to="/about" className="card-link-block text-white text-decoration-none">
@@ -129,7 +132,7 @@ const Home: React.FC = () => {
 
           {/* Card 2 */}
           <div className="col-12 col-sm-6 col-md-4">
-            <div className="card border-0 bg-transparent">
+            <div className="cards border-0 bg-transparent">
               <img src={img2} alt="The Shop" className="img-fluid uniform-image" />
               <div className="bg-dark text-white py-2">
                 <Link to="/shop" className="card-link-block text-white text-decoration-none">
@@ -141,7 +144,7 @@ const Home: React.FC = () => {
 
           {/* Card 3 */}
           <div className="col-12 col-sm-6 col-md-4">
-            <div className="card border-0 bg-transparent">
+            <div className="cards border-0 bg-transparent">
               <img src={img3} alt="Services" className="img-fluid uniform-image" />
               <div className="bg-dark text-white py-2">
                 <Link to="/shop" className="card-link-block text-white text-decoration-none">
@@ -184,6 +187,34 @@ const Home: React.FC = () => {
           </div>
           <button type="submit" className="btn btn-dark w-100">SIGN UP</button>
         </form>
+      </div>
+    </section>
+
+    {/* section 7 */}
+    <section className="py-5 text-center">
+      <div className="container">
+        <h1 className="mb-4">
+          All the very best content that our readers love. It’s 100% free, so get reading and build your business with our proven strategies
+        </h1>
+        <p className="mb-4">Free tips & hints</p>
+
+        <div className="row g-4 justify-content-center">
+          <div className="col-12 col-sm-6 col-md-4">
+            <div className="card border-0 bg-transparent" data-hover-text="Tips 1: Start your journey">
+              <img src={tips1} alt="About" className="img-fluid uniform-image" />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4">
+            <div className="card border-0 bg-transparent" data-hover-text="Tips 2: Keep improving">
+              <img src={tips2} alt="About" className="img-fluid uniform-image" />
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4">
+            <div className="card border-0 bg-transparent" data-hover-text="Tips 3: Stay consistent">
+              <img src={tips3} alt="About" className="img-fluid uniform-image" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

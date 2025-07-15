@@ -4,12 +4,24 @@
   font-family: 'Cormorant Garamond', Georgia, "Times New Roman", serif;
 } 
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: 'Cormorant Garamond', Georgia, "Times New Roman", serif;
   font-size: 24px !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  flex: 1;
 }
 
 code {
