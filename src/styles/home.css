@@ -1,0 +1,56 @@
+.hero-section {
+  position: relative;
+}
+
+.bg-section {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* overlay */
+  z-index: 1;
+}
+
+.bg-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.imgmodel{
+    border-radius: 220px 220px 0px 0px;
+}
+
+/* section4 */
+.custom-section {
+  background-image: url('../assets/bg.png'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh !important;
+  padding: 10px 0; 
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.custom-box {
+  background-color: #2b2b2b;
+  max-width: 600px;
+  min-height: 80vh;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.tick-icon {
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* section 5 */
+.uniform-image {
+  height: 450px !important;
+  object-fit: cover;
+  width: 100%;
+}

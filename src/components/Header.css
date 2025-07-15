@@ -1,0 +1,125 @@
+.container {
+  max-width: 1200px;     
+  margin: 0 auto;           
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* === HEADER STYLES === */
+.custom-header {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  font-family: 'Georgia', serif;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+nav {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+/* === DROPDOWN === */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 0.3rem;
+  font-size: 0.6rem;
+}
+
+/* === Dropdown Menu === */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f8f8;
+}
+
+/* === Hover logic === */
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*Hamburger button */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding-top: 1rem;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-link, .nav-dropdown {
+    padding: 0.5rem 1rem;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    box-shadow: none;
+    background: #f9f9f9;
+  }
+
+  .nav-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}

@@ -1,25 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/home';
+import About from './pages/about';
+import Services from './pages/services';
+import Portfolio from './pages/portfolio';
+import Blog from './pages/blog';
+import Shop from './pages/shop';
+import Connect from './pages/connect';
+import Service1 from './pages/services/service1';
+import Service2 from './pages/services/service2';
+import Service3 from './pages/services/service3';
+import BlogPost1 from './pages/blog/blogPost1';
+import BlogPost2 from './pages/blog/blogPost2';
+import Product1 from './pages/shop/product1';
+import Product2 from './pages/shop/product2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="/service1" element={<Service1 />} />
+          <Route path="/service2" element={<Service2 />} />
+          <Route path="/service3" element={<Service3 />} />
+          <Route path="/blog1" element={<BlogPost1 />} />
+          <Route path="/blog2" element={<BlogPost2 />} />
+          <Route path="/product1" element={<Product1 />} />
+          <Route path="/product2" element={<Product2 />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
