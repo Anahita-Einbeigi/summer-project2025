@@ -1,64 +1,59 @@
 import './Header.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function Header(){
+function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="custom-header py-3 px-4 shadow-sm">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
-
-            <h1 className="logo mb-0">Palmer Design</h1>
-            <button
+          <h1 className="logo mb-0">Palmer Design</h1>
+          <button
             className="menu-toggle d-lg-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
+          >
             ☰
-            </button>
+          </button>
         </div>
+
         <nav className={`main-nav ${isMobileMenuOpen ? 'open' : ''}`}>
-            <a href="#home" className="nav-link d-inline-block px-2">HOME</a>
-            <a href="#about" className="nav-link d-inline-block px-2">ABOUT</a>
+          <Link to="/home" className="nav-link d-inline-block px-2">HOME</Link>
+          <Link to="/about" className="nav-link d-inline-block px-2">ABOUT</Link>
 
-            <div className="nav-dropdown d-inline-block px-2">
-                <a href="#services" className="nav-link dropdown-toggle">
-                SERVICES
-                </a>
-                <div className="dropdown-menu">
-                    <a href="#service1" className="dropdown-item">Service 1</a>
-                    <a href="#service2" className="dropdown-item">Service 2</a>
-                    <a href="#service3" className="dropdown-item">Service 3</a>
-                </div>
+          <div className="nav-dropdown d-inline-block px-2">
+            <Link to="/services" className="nav-link dropdown-toggle">SERVICES</Link>
+            <div className="dropdown-menu">
+              <Link to="/service1" className="dropdown-item">Service 1</Link>
+              <Link to="/service2" className="dropdown-item">Service 2</Link>
+              <Link to="/service3" className="dropdown-item">Service 3</Link>
             </div>
+          </div>
 
-            <a href="#portfolio" className="nav-link d-inline-block px-2">PORTFOLIO</a>
+          <Link to="/portfolio" className="nav-link d-inline-block px-2">PORTFOLIO</Link>
 
-            <div className="nav-dropdown d-inline-block px-2">
-                <a href="#blog" className="nav-link dropdown-toggle">
-                BLOG 
-                </a>
-                <div className="dropdown-menu">
-                    <a href="#blog1" className="dropdown-item">Blog Post 1</a>
-                    <a href="#blog2" className="dropdown-item">Blog Post 2</a>
-                </div>
+          <div className="nav-dropdown d-inline-block px-2">
+            <Link to="/blog" className="nav-link dropdown-toggle">BLOG</Link>
+            <div className="dropdown-menu">
+              <Link to="/blog1" className="dropdown-item">Blog Post 1</Link>
+              <Link to="/blog2" className="dropdown-item">Blog Post 2</Link>
             </div>
+          </div>
 
-            <div className="nav-dropdown d-inline-block px-2">
-                <a href="#shop" className="nav-link dropdown-toggle">
-                SHOP 
-                </a>
-                <div className="dropdown-menu">
-                    <a href="#product1" className="dropdown-item">Product 1</a>
-                    <a href="#product2" className="dropdown-item">Product 2</a>
-                </div>
+          <div className="nav-dropdown d-inline-block px-2">
+            <Link to="/shop" className="nav-link dropdown-toggle">SHOP</Link>
+            <div className="dropdown-menu">
+              <Link to="/product1" className="dropdown-item">Product 1</Link>
+              <Link to="/product2" className="dropdown-item">Product 2</Link>
             </div>
+          </div>
 
-            <a href="#connect" className="nav-link d-inline-block px-2">CONNECT</a>
-            </nav>
-        </div>
+          <Link to="/connect" className="nav-link d-inline-block px-2">CONNECT</Link>
+        </nav>
+      </div>
     </header>
   );
-};
+}
 
 export default Header;

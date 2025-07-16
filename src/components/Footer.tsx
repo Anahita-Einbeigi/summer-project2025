@@ -35,7 +35,7 @@ function Footer() {
           </div>
         </div>
 
-        <p className="mb-1">
+        <p className="mb-1 border-bottom border-secondary pb-5 mt-5">
           St Tropez turquoise wreath, gemstone warm babe iced coffee. Sequin opal iced coffee getaway, brush sugar dusty blue dainty shearling luster sparkle sequin filter.
         </p>
         <p className="text-sm mb-0">
