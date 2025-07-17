@@ -3,7 +3,6 @@ import '../styles/home.css';
 import { Link } from 'react-router-dom';
 import heroImage from '../assets/hero.png'; 
 import sideImage from '../assets/side.png';
-import bgImage from '../assets/bg.png';
 import img1 from '../assets/about.png';
 import img2 from '../assets/shop.png';
 import img3 from '../assets/services.png';
@@ -37,7 +36,7 @@ const Home: React.FC = () => {
             <img src={sideImage} alt="intro" className="img-fluid imgmodel w-100" />
           </div>
           <div className="col-md-7">
-            <h1 >Hey, I’m Caris</h1>
+            <h1 >Hey, I’m Ania</h1>
             <h5 className="text-muted mb-3">Born to stand out</h5>
             <p>
               Bouquet spring jetsetter disco ball charmed, espresso slippers turquoise blush taupe cultivate tan silk.
