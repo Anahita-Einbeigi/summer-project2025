@@ -9,8 +9,6 @@ import Blog from './pages/blog';
 import Shop from './pages/shop';
 import Connect from './pages/connect';
 import Service1 from './pages/services/service1';
-import Service2 from './pages/services/service2';
-import Service3 from './pages/services/service3';
 import BlogPost1 from './pages/blog/blogPost1';
 import BlogPost2 from './pages/blog/blogPost2';
 import Product1 from './pages/shop/product1';
@@ -31,8 +29,6 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/service1" element={<Service1 />} />
-          <Route path="/service2" element={<Service2 />} />
-          <Route path="/service3" element={<Service3 />} />
           <Route path="/blog1" element={<BlogPost1 />} />
           <Route path="/blog2" element={<BlogPost2 />} />
           <Route path="/product1" element={<Product1 />} />
