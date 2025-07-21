@@ -26,8 +26,6 @@ function Header() {
             <Link to="/services" className="nav-link dropdown-toggle">SERVICES</Link>
             <div className="dropdown-menu">
               <Link to="/service1" className="dropdown-item">Service 1</Link>
-              <Link to="/service2" className="dropdown-item">Service 2</Link>
-              <Link to="/service3" className="dropdown-item">Service 3</Link>
             </div>
           </div>
 
@@ -37,7 +35,6 @@ function Header() {
             <Link to="/blog" className="nav-link dropdown-toggle">BLOG</Link>
             <div className="dropdown-menu">
               <Link to="/blog1" className="dropdown-item">Blog Post 1</Link>
-              <Link to="/blog2" className="dropdown-item">Blog Post 2</Link>
             </div>
           </div>
 
