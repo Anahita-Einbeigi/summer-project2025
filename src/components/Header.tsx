@@ -42,7 +42,6 @@ function Header() {
             <Link to="/shop" className="nav-link dropdown-toggle">SHOP</Link>
             <div className="dropdown-menu">
               <Link to="/product1" className="dropdown-item">Product 1</Link>
-              <Link to="/product2" className="dropdown-item">Product 2</Link>
             </div>
           </div>
 

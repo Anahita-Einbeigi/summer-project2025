@@ -11,7 +11,6 @@ import Connect from './pages/connect';
 import Service1 from './pages/services/service1';
 import BlogPost1 from './pages/blog/blogPost1';
 import Product1 from './pages/shop/product1';
-import Product2 from './pages/shop/product2';
 
 function App() {
   return (
@@ -30,7 +29,6 @@ function App() {
           <Route path="/service1" element={<Service1 />} />
           <Route path="/blog1" element={<BlogPost1 />} />
           <Route path="/product1" element={<Product1 />} />
-          <Route path="/product2" element={<Product2 />} />
         </Routes>
       </main>
       <Footer />

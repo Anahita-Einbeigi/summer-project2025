@@ -43,7 +43,7 @@ const blogPost1: React.FC = () => {
 
           <img src={mainImage} alt="blog main" className="img-fluid mx-auto my-4 w-75 d-block" />
 
-          <p>
+          <p className='mb-5'>
             Sequin opal iced coffee getaway, brush sugar dusty blue dainty shearling luster sparkle sequin filter.
             Bokeh aesthetic vinyl polaroid artisan photo journal film craft. Eucalyptus sundress espresso honey glow
             brush powdery. Suede espresso swank dusty plush cult-favorite twinkle Tokyo cocktail.
